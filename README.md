@@ -1,8 +1,3 @@
-# aspect-based-sentiment-analysis
-This is a comprehensive structure for your GitHub README, designed to cover all the phases you mentioned (Data Preparation, Model Architecture, Evaluation, and Robustness).
-
----
-
 # Aspect-Based Sentiment Analysis (ABSA) 🍜💻
 
 This repository contains an implementation of **Aspect-Based Sentiment Analysis** using Transformer-based models (BERT/RoBERTa). The goal of this project is to identify the sentiment polarity (Positive, Negative, Neutral) of specific aspects within a sentence, based on the **SemEval-2014 Task 4** dataset (Restaurant/Laptop subsets).
