@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
 import torch
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
@@ -24,7 +25,6 @@ def set_seed(seed=42):
 # ==========================================
 # 1. DATA PREPARATION (Executes Once)
 # ==========================================
-# Assuming 'df' is your pre-loaded Pandas DataFrame
 train_df, val_df = train_test_split(
     df,
     test_size=0.2,
@@ -92,10 +92,23 @@ def train_absa(config):
     use_amp = torch.cuda.is_available()
     scaler = torch.amp.GradScaler(enabled=use_amp) # MAGIC: Enables 2x speedup on T4 GPUs
 
+    best_val_f1 = -1
+    patience = 2
+    counter = 0
+
+    best_model_state = model.state_dict()
+    
+    train_losses = []
+    train_accs = []
+    val_losses = []
+    val_accs = []
+
     # 2d. The Training Loop
     for epoch in range(config["epochs"]):
         model.train()
         total_loss = 0
+        correct = 0
+        total = 0
         
         for batch in train_loader:
             input_ids = batch["input_ids"].to(device)
@@ -117,9 +130,18 @@ def train_absa(config):
 
             total_loss += loss.item()
 
+            preds = torch.argmax(outputs.logits, dim=1)
+            correct += (preds == labels).sum().item()
+            total += labels.size(0)
+
+        train_losses.append(total_loss / len(train_loader))
+        train_accs.append(correct / total)
+
         # 2e. The Validation Loop
         model.eval()
         val_loss = 0
+        val_correct = 0
+        val_total = 0
         all_preds = []
         all_labels = []
 
@@ -135,22 +157,59 @@ def train_absa(config):
                 
                 val_loss += loss.item()
                 preds = torch.argmax(outputs.logits, dim=1)
-                
+                val_correct += (preds == labels).sum().item()
+                val_total += labels.size(0)
+
                 all_preds.extend(preds.cpu().numpy())
                 all_labels.extend(labels.cpu().numpy())
 
+        val_losses.append(val_loss / len(val_loader))
+        val_accs.append(val_correct / val_total)
+
+        print(f"Epoch {epoch+1}")
+        print("Train Loss:", train_losses[-1])
+        print("Val Loss:", val_losses[-1])
+        
         # 2f. Calculate MACRO F1 (Crucial for Imbalanced SemEval data)
         macro_f1 = f1_score(all_labels, all_preds, average='macro')
         avg_val_loss = val_loss / len(val_loader)
 
+        if macro_f1 > best_val_f1:
+            best_val_f1 = macro_f1
+            best_model_state = model.state_dict()
+            counter = 0
+        else:
+            counter += 1
+
+        if counter >= patience:
+            print("Early stopping triggered")
+            break
+        
         # 2g. Report to Ray Tune (This triggers ASHA to keep or kill the trial)
         train.report({"val_loss": avg_val_loss, "macro_f1": macro_f1})
+
+    model.load_state_dict(best_model_state, strict=True)
+
+    plt.figure()
+    plt.plot(train_losses, label="Train Loss")
+    plt.plot(val_losses, label="Validation Loss")
+    plt.legend()
+    plt.title(f"Loss Curve - {config['model_name']}")
+    plt.show()
+
+    plt.figure()
+    plt.plot(train_accs, label="Train Accuracy")
+    plt.plot(val_accs, label="Validation Accuracy")
+    plt.legend()
+    plt.title(f"Accuracy Curve - {config['model_name']}")
+    plt.show()
 
 # ==========================================
 # 3. CONFIGURE AND LAUNCH THE SWEEP
 # ==========================================
 if __name__ == "__main__":
     set_seed(42)
+    
     # Define what we want to test
     search_space = {
         "model_name": tune.choice(["roberta-base", "microsoft/deberta-v3-base"]),
