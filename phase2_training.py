@@ -157,3 +157,10 @@ plt.plot(val_accs, label="Validation Accuracy")
 plt.legend()
 plt.title("Accuracy Curve")
 plt.show()
+
+
+# Save model and tokenizer
+model.save_pretrained("./final_model")
+tokenizer.save_pretrained("./final_model")
+
+print("Model saved successfully!")
