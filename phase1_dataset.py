@@ -69,6 +69,14 @@ df["clean_sentence"] = df["sentence"].apply(clean_text)
 df["word_count"] = df["sentence"].apply(lambda x: len(x.split()))
 df[["sentence", "word_count"]].head()
 
+# Label Encoding (phase 2)
+label2id = {
+    "positive": 0,
+    "negative": 1,
+    "neutral": 2
+}
+
+df["label"] = df["polarity"].map(label2id)
 
 plt.figure()
 plt.hist(df["word_count"], bins=30)
