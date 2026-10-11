@@ -1,0 +1,102 @@
+[
+      {
+            "sentence_a": "The food was delicious, but the service was painfully slow.",
+            "sentence_b": "The food was delicious — the service, however, was painfully slow.",
+            "aspect": "service"
+      },
+      {
+            "sentence_a": "I loved the ambience; the music made the evening perfect.",
+            "sentence_b": "I loved the ambience (the music made the evening perfect).",
+            "aspect": "ambience"
+      },
+      {
+            "sentence_a": "They honored my dietary request and the dish was great.",
+            "sentence_b": "They claim to have honored my dietary request and the dish was great.",
+            "aspect": "dietary request"
+      },
+      {
+            "sentence_a": "Delivery arrived cold, but the packaging looked very professional.",
+            "sentence_b": "Packaging looked very professional — delivery arrived cold.",
+            "aspect": "delivery"
+      },
+      {
+            "sentence_a": "The menu pictures were accurate; what I got matched perfectly.",
+            "sentence_b": "The menu pictures weren’t inaccurate; what I got matched perfectly.",
+            "aspect": "menu pictures"
+      },
+      {
+            "sentence_a": "Wait time was 45 minutes — unacceptable for lunch.",
+            "sentence_b": "Wait time was 45 minutes — not exactly ideal for lunch.",
+            "aspect": "wait time"
+      },
+      {
+            "sentence_a": "The server was rude and ignored our questions.",
+            "sentence_b": "The server, who ignored our questions, was not exactly friendly.",
+            "aspect": "server"
+      },
+      {
+            "sentence_a": "Food portion was generous; value for money is excellent.",
+            "sentence_b": "Food portion was generous; therefore value for money is not bad.",
+            "aspect": "value for money"
+      },
+      {
+            "sentence_a": "The soup was undercooked and tasted raw.",
+            "sentence_b": "The soup tasted kind of raw — undercooked, really.",
+            "aspect": "soup"
+      },
+      {
+            "sentence_a": "They offer quick takeout service which I appreciate.",
+            "sentence_b": "Quick takeout service — I appreciated that.",
+            "aspect": "takeout service"
+      },
+      {
+            "sentence_a": "I’d recommend this place to families; it’s kid-friendly.",
+            "sentence_b": "I’d recommend this place to families — maybe not for couples seeking quiet.",
+            "aspect": "families"
+      },
+      {
+            "sentence_a": "The portion sizes were small, yet the flavors were intense.",
+            "sentence_b": "Despite small portion sizes, the flavors were intense.",
+            "aspect": "flavors"
+      },
+      {
+            "sentence_a": "The staff handled my allergy carefully.",
+            "sentence_b": "The staff ‘handled’ my allergy carefully.",
+            "aspect": "staff"
+      },
+      {
+            "sentence_a": "The dessert looked beautiful but tasted bland.",
+            "sentence_b": "Beautiful-looking dessert; taste? Bland.",
+            "aspect": "dessert"
+      },
+      {
+            "sentence_a": "Service was good when we arrived, but declined as the night went on.",
+            "sentence_b": "Service was good at first; later service declined.",
+            "aspect": "service"
+      },
+      {
+            "sentence_a": "App checkout froze during peak hours.",
+            "sentence_b": "App checkout froze — only during peak hours though.",
+            "aspect": "app checkout"
+      },
+      {
+            "sentence_a": "The hostess was polite but seated us near the kitchen.",
+            "sentence_b": "Polite hostess, seated us near the kitchen.",
+            "aspect": "hostess"
+      },
+      {
+            "sentence_a": "Menu photos are vibrant, though they didn’t match what arrived.",
+            "sentence_b": "Menu photos are vibrant — they didn’t match what arrived.",
+            "aspect": "menu photos"
+      },
+      {
+            "sentence_a": "I appreciated that they refilled water often.",
+            "sentence_b": "Refilled water often — appreciated that.",
+            "aspect": "water"
+      },
+      {
+            "sentence_a": "The steak was perfectly cooked; no complaints.",
+            "sentence_b": "Perfectly cooked steak — no complaints at all.",
+            "aspect": "steak"
+      }
+]

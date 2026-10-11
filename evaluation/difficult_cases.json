@@ -1,0 +1,22 @@
+[
+      {"sentence": "The meal tasted great, but the waiter’s attitude ruined the evening.", "aspect": "waiter"},
+      {"sentence": "Prices are reasonable — unless you order the specials, then it gets expensive.", "aspect": "specials"},
+      {"sentence": "The place is cozy, though seating is limited during peak hours.", "aspect": "seating"},
+      {"sentence": "I loved the main course; dessert, however, tasted like it came straight from a freezer.", "aspect": "dessert"},
+      {"sentence": "They took our reservation but the table was sticky when we sat down.", "aspect": "table"},
+      {"sentence": "Perfect ambience for dates — at least until the kids started running around.", "aspect": "ambience"},
+      {"sentence": "I thought the food was good, but I’d hesitate to call it healthy.", "aspect": "food"},
+      {"sentence": "We waited half an hour for our order — not sure if the kitchen or the app was to blame.", "aspect": "order"},
+      {"sentence": "It’s cheaper than competitors, yet it feels less sturdy in quality.", "aspect": "quality"},
+      {"sentence": "Great flavors — until you bite into a chunk of undercooked meat.", "aspect": "meat"},
+      {"sentence": "The menu photos are vibrant, though they didn’t match what arrived.", "aspect": "menu photos"},
+      {"sentence": "They claim 24/7 delivery; I called at 2 AM and no one picked up.", "aspect": "delivery"},
+      {"sentence": "It felt like a steal during the sale, but I doubt it’s worth full price.", "aspect": "price"},
+      {"sentence": "The instructions for dietary requests were confusing, yet the chef managed to accommodate us.", "aspect": "chef"},
+      {"sentence": "Although not the priciest option, I regret ordering it.", "aspect": "ordering"},
+      {"sentence": "An improvement from their last location, but still not as good as I remember.", "aspect": "location"},
+      {"sentence": "Handles rush hour fine, but the AC fails when the crowd grows.", "aspect": "AC"},
+      {"sentence": "Nice packaging for takeaway, but the seal was broken and the soup spilled.", "aspect": "seal"},
+      {"sentence": "The app launches instantly — except when it forces an update and stalls.", "aspect": "app"},
+      {"sentence": "I’d recommend it for families, but not if you’re looking for fine dining.", "aspect": "fine dining"}
+]
