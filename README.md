@@ -1,4 +1,4 @@
-# 🍽️ Aspect-Based Sentiment Analysis with RoBERTa
+# 🍽️ Aspect-Based Sentiment Analysis
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white)
@@ -103,11 +103,11 @@ Full details and discussion are in the project report.
 .
 ├── aspect_based_sentiment_analysis.ipynb
 ├── assets/
-├── data
+├── data/
 │   ├── Restaurants_Test_Data_phaseB.xml
 │   ├── Restaurants_Test_Gold.xml
 │   └── Restaurants_Train_v2.xml
-├── evaluation
+├── evaluation/
 │   ├── comparison_pairs.json
 │   └── difficult_cases.json
 ├── ABSA Project Report.pdf
@@ -155,11 +155,11 @@ Open `aspect_based_sentiment_analysis.ipynb` and run the cells in order:
 
 This project began as a university team project. The original team members are:
 
-- [Mr. Amir Mohammad Sharbati](https://github.com/AmirMohammad-Sharbati)
-- [Mr. Seyed Mohammadreza Javadi](https://github.com/JavadiSM)
-- [Mr. Alireza Elmifard](https://github.com/aref1010)
+- [Amir Mohammad Sharbati](https://github.com/AmirMohammad-Sharbati)
+- [Seyed Mohammadreza Javadi](https://github.com/JavadiSM)
+- [Alireza Elmifard](https://github.com/aref1010)
 
-This repository is a continuation maintained by **[Mr. Amir Mohammad Sharbati](https://github.com/AmirMohammad-Sharbati)**, who contributed substantially to the original work and afterwards extended it: a leakage-free grouped split, Ray Tune search across two backbones, class-weighted training, numerical-stability guards, retraining on the full data, a broader evaluation suite and the robustness experiments.
+This repository is a continuation maintained by **[Amir Mohammad Sharbati](https://github.com/AmirMohammad-Sharbati)**, who contributed substantially to the original work and afterwards extended it: a leakage-free grouped split, Ray Tune search across two backbones, class-weighted training, numerical-stability guards, retraining on the full data, a broader evaluation suite and the robustness experiments.
 
 ## 📝 License
 
