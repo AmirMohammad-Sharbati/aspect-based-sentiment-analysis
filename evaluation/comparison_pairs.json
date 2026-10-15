@@ -1,102 +1,102 @@
 [
       {
-            "sentence_a": "The food was delicious, but the service was painfully slow.",
-            "sentence_b": "The food was delicious — the service, however, was painfully slow.",
-            "aspect": "service"
+            "sentence_a": "The pasta was amazing, but the sauce was too salty.",
+            "sentence_b": "The pasta was amazing — the sauce, though, was overly salted.",
+            "aspect": "sauce"
       },
       {
-            "sentence_a": "I loved the ambience; the music made the evening perfect.",
-            "sentence_b": "I loved the ambience (the music made the evening perfect).",
-            "aspect": "ambience"
+            "sentence_a": "I didn't dislike the cocktails; they were actually quite good.",
+            "sentence_b": "The cocktails were not bad at all — quite good, honestly.",
+            "aspect": "cocktails"
       },
       {
-            "sentence_a": "They honored my dietary request and the dish was great.",
-            "sentence_b": "They claim to have honored my dietary request and the dish was great.",
-            "aspect": "dietary request"
+            "sentence_a": "The waiter forgot our order twice, which was frustrating.",
+            "sentence_b": "The waiter forgot our order twice — frustrating, to say the least.",
+            "aspect": "waiter"
       },
       {
-            "sentence_a": "Delivery arrived cold, but the packaging looked very professional.",
-            "sentence_b": "Packaging looked very professional — delivery arrived cold.",
-            "aspect": "delivery"
+            "sentence_a": "The pizza wasn't hot when it arrived, and that ruined the meal.",
+            "sentence_b": "The pizza arrived not hot — that ruined the meal.",
+            "aspect": "pizza"
       },
       {
-            "sentence_a": "The menu pictures were accurate; what I got matched perfectly.",
-            "sentence_b": "The menu pictures weren’t inaccurate; what I got matched perfectly.",
-            "aspect": "menu pictures"
+            "sentence_a": "The ambiance was lovely, even if the chairs were uncomfortable.",
+            "sentence_b": "Lovely ambiance — uncomfortable chairs, but still lovely.",
+            "aspect": "ambiance"
       },
       {
-            "sentence_a": "Wait time was 45 minutes — unacceptable for lunch.",
-            "sentence_b": "Wait time was 45 minutes — not exactly ideal for lunch.",
-            "aspect": "wait time"
+            "sentence_a": "I can't say the sushi was fresh; it tasted off.",
+            "sentence_b": "The sushi wasn't exactly fresh — it tasted off.",
+            "aspect": "sushi"
       },
       {
-            "sentence_a": "The server was rude and ignored our questions.",
-            "sentence_b": "The server, who ignored our questions, was not exactly friendly.",
-            "aspect": "server"
+            "sentence_a": "The prices were reasonable, but the portions were tiny.",
+            "sentence_b": "Reasonable prices — tiny portions, though.",
+            "aspect": "prices"
       },
       {
-            "sentence_a": "Food portion was generous; value for money is excellent.",
-            "sentence_b": "Food portion was generous; therefore value for money is not bad.",
-            "aspect": "value for money"
-      },
-      {
-            "sentence_a": "The soup was undercooked and tasted raw.",
-            "sentence_b": "The soup tasted kind of raw — undercooked, really.",
-            "aspect": "soup"
-      },
-      {
-            "sentence_a": "They offer quick takeout service which I appreciate.",
-            "sentence_b": "Quick takeout service — I appreciated that.",
-            "aspect": "takeout service"
-      },
-      {
-            "sentence_a": "I’d recommend this place to families; it’s kid-friendly.",
-            "sentence_b": "I’d recommend this place to families — maybe not for couples seeking quiet.",
-            "aspect": "families"
-      },
-      {
-            "sentence_a": "The portion sizes were small, yet the flavors were intense.",
-            "sentence_b": "Despite small portion sizes, the flavors were intense.",
-            "aspect": "flavors"
-      },
-      {
-            "sentence_a": "The staff handled my allergy carefully.",
-            "sentence_b": "The staff ‘handled’ my allergy carefully.",
+            "sentence_a": "The staff were not unfriendly; they were just busy.",
+            "sentence_b": "The staff weren't unfriendly — just busy.",
             "aspect": "staff"
       },
       {
-            "sentence_a": "The dessert looked beautiful but tasted bland.",
-            "sentence_b": "Beautiful-looking dessert; taste? Bland.",
-            "aspect": "dessert"
+            "sentence_a": "The coffee was decent, though it wasn't exactly hot.",
+            "sentence_b": "The coffee wasn't exactly hot — decent, though.",
+            "aspect": "coffee"
       },
       {
-            "sentence_a": "Service was good when we arrived, but declined as the night went on.",
-            "sentence_b": "Service was good at first; later service declined.",
-            "aspect": "service"
+            "sentence_a": "The delivery was late, but the food was still warm.",
+            "sentence_b": "Late delivery — food was still warm, at least.",
+            "aspect": "delivery"
       },
       {
-            "sentence_a": "App checkout froze during peak hours.",
-            "sentence_b": "App checkout froze — only during peak hours though.",
-            "aspect": "app checkout"
+            "sentence_a": "I wouldn't say the salad was fresh; it was quite wilted.",
+            "sentence_b": "The salad wasn't fresh — quite wilted, actually.",
+            "aspect": "salad"
       },
       {
-            "sentence_a": "The hostess was polite but seated us near the kitchen.",
-            "sentence_b": "Polite hostess, seated us near the kitchen.",
+            "sentence_a": "The music was too loud, but we still enjoyed the night.",
+            "sentence_b": "Too loud music — we still enjoyed the night, though.",
+            "aspect": "music"
+      },
+      {
+            "sentence_a": "The burger wasn't bad; it was actually pretty tasty.",
+            "sentence_b": "The burger was not bad — pretty tasty, even.",
+            "aspect": "burger"
+      },
+      {
+            "sentence_a": "The hostess wasn't rude, but she wasn't very welcoming either.",
+            "sentence_b": "The hostess wasn't rude — not very welcoming, though.",
             "aspect": "hostess"
       },
       {
-            "sentence_a": "Menu photos are vibrant, though they didn’t match what arrived.",
-            "sentence_b": "Menu photos are vibrant — they didn’t match what arrived.",
-            "aspect": "menu photos"
+            "sentence_a": "The fries were crispy, though they lacked seasoning.",
+            "sentence_b": "Crispy fries — lacking seasoning, but crispy.",
+            "aspect": "fries"
       },
       {
-            "sentence_a": "I appreciated that they refilled water often.",
-            "sentence_b": "Refilled water often — appreciated that.",
-            "aspect": "water"
+            "sentence_a": "I didn't love the dessert; it was a bit too sweet.",
+            "sentence_b": "The dessert wasn't my favorite — a bit too sweet.",
+            "aspect": "dessert"
       },
       {
-            "sentence_a": "The steak was perfectly cooked; no complaints.",
-            "sentence_b": "Perfectly cooked steak — no complaints at all.",
-            "aspect": "steak"
+            "sentence_a": "The table wasn't clean, and that bothered me.",
+            "sentence_b": "The table wasn't clean — that bothered me.",
+            "aspect": "table"
+      },
+      {
+            "sentence_a": "The soup was not hot, but it was flavorful.",
+            "sentence_b": "Not hot soup — flavorful, though.",
+            "aspect": "soup"
+      },
+      {
+            "sentence_a": "The service wasn't slow, but it wasn't attentive either.",
+            "sentence_b": "The service wasn't slow — not attentive, though.",
+            "aspect": "service"
+      },
+      {
+            "sentence_a": "The view was stunning, even though the window was dirty.",
+            "sentence_b": "Stunning view — dirty window, but stunning.",
+            "aspect": "view"
       }
 ]
